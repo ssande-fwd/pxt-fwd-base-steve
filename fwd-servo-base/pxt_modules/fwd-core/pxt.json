@@ -1,0 +1,21 @@
+{
+    "name": "pxt-fwd-modules",
+    "version": "2.0.5",
+    "description": "Standalone Forward Education MakeCode modules. Use them individually or group them together in another extension.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:microsoft/pxt-jacdac#v1.9.32"
+    },
+    "files": [
+        "common/buttons.ts",
+        "common/lights.ts",
+        "common/motors.ts",
+        "common/sensors.ts"
+    ],
+    "testFiles": [],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "pxt-fwd-base",
+    "version": "1.0.0",
+    "description": "Dependencies for pxt-fwd-modules.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:microsoft/pxt-jacdac#v1.9.32"
+    },
+    "files": [
+        "common/buttons.ts",
+        "common/lights.ts",
+        "common/motors.ts",
+        "common/sensors.ts"
+    ],
+    "testFiles": [],
+    "public": true,
+    "supportedTargets": ["microbit"]
+}
