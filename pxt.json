@@ -15,5 +15,7 @@
     ],
     "testFiles": [],
     "public": true,
-    "supportedTargets": ["microbit"]
+    "supportedTargets": [
+        "microbit"
+    ]
 }
