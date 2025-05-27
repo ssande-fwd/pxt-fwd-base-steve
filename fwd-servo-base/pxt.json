@@ -4,7 +4,7 @@
     "description": "FWD Edu Climate Action Kit Gen. 2 Generic Servo",
     "license": "MIT",
     "dependencies": {
-        "fwd-core": "github:Forward-Education/pxt-fwd-base",
+        "fwd-base": "github:Forward-Education/pxt-fwd-base",
         "jacdac-servo": "github:microsoft/pxt-jacdac/servo"
     },
     "files": [
