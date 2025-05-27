@@ -1,6 +1,6 @@
 {
     "name": "pxt-fwd-base",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Dependencies for pxt-fwd-modules.",
     "license": "MIT",
     "dependencies": {
