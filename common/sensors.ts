@@ -1,7 +1,8 @@
+//% block="Sensors"
 //% color=#5BA42D
 //% icon="\uf1eb"
 //% weight=202
-namespace sensors {
+namespace fwdSensors {
     export const enum ThresholdDirection {
         //% block="over"
         Over,

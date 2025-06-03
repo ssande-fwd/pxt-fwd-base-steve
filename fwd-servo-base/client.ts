@@ -1,4 +1,4 @@
-namespace motors {
+namespace fwdMotors {
     //% fixedInstances
     export class FwdServoClient extends modules.ServoClient {
         constructor(role: string) {
@@ -72,10 +72,10 @@ namespace motors {
         }
     }
 
-    //% fixedInstance
+    //% fixedInstance whenUsed
     export const leftServo = new FwdServoClient("leftServo?srvo=0")
-    //% fixedInstance
+    //% fixedInstance whenUsed
     export const middleServo = new FwdServoClient("middleServo?srvo=1")
-    //% fixedInstance
+    //% fixedInstance whenUsed
     export const rightServo = new FwdServoClient("rightServo?srvo=2")
 }
