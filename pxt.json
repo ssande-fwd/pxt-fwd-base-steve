@@ -11,7 +11,8 @@
         "common/buttons.ts",
         "common/lights.ts",
         "common/motors.ts",
-        "common/sensors.ts"
+        "common/sensors.ts",
+        "common/enums.ts"
     ],
     "testFiles": [],
     "public": true,
