@@ -74,8 +74,8 @@
     "testFiles": [],
     "public": true,
     "targetVersions": {
-        "target": "7.1.33",
-        "pxt": "11.4.21"
+        "target": "7.1.40",
+        "pxt": "11.4.25"
     },
     "dalDTS": {
         "corePackage": ".",

@@ -1,6 +1,6 @@
 // Someday I hope this code will be in pxt-jacdac.
 
-namespace modules {
+namespace fwdBase {
     /**
      * Controls LED lights
      **/
@@ -20,9 +20,6 @@ namespace modules {
         /**
          * Returns true if the light brightness is anything other than 0%.
          */
-        //% group="Environment"
-        //% block="$this on"
-        //% blockId=jacdac_lightbulb_is_on
         isOn(): boolean {
             if (this._brightness.values.get(0) === 0) {
                 return false
@@ -35,13 +32,6 @@ namespace modules {
          * Indicates the brightness of the light bulb. Zero means completely off and 0xffff means completely on.
          * For non-dimmable lights, the value should be clamp to 0xffff for any non-zero value.
          */
-        //% group="Environment"
-        //% blockId=jacdac_lightbulb_brightness___set
-        //% block="set %lights brightness to %value (\\%)"
-        //% weight=100
-        //% value.min=0
-        //% value.max=100
-        //% value.defl=100
         setBrightness(value: number) {
             if (value < 0 || value > 100) {
                 // If out of range, do nothing

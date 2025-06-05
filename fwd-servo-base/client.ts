@@ -1,28 +1,16 @@
-namespace fwdMotors {
+namespace fwdBase {
     //% fixedInstances
     export class FwdServoClient extends modules.ServoClient {
         constructor(role: string) {
             super(role)
         }
 
-        /**
-         * Is the servo enabled or disabled? Enabled = true, disabled = false
-         */
-        //% group="Servo"
-        //% block="$this state"
-        //% blockId=fwd_servo_is_enabled
+        // block created in fwd-servo-positional / fwd-servo-continuous
         isEnabled(): boolean {
             return super.enabled()
         }
 
-        /**
-         * Set the servo to enabled or disabled
-         * @param state enabled = true, disabled = false
-         */
-        //% group="Servo"
-        //% block="set $this $state"
-        //% blockId=fwd_servo_set_enabled
-        //% state.shadow="toggleOnOff"
+        // block created in fwd-servo-positional / fwd-servo-continuous
         setEnabled(state: boolean): void {
             return super.setEnabled(state)
         }

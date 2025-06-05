@@ -1,10 +1,10 @@
 {
-    "name": "jacdac-lightbulb",
+    "name": "fwd-lightbulb",
     "version": "1.0.3",
     "description": "Controls LED lights",
     "dependencies": {
         "core": "*",
-        "jacdac": "github:microsoft/pxt-jacdac"
+        "jacdac": "github:microsoft/pxt-jacdac#v1.9.32"
     },
     "files": [
         "constants.ts",
