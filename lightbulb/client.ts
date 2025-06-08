@@ -9,11 +9,11 @@ namespace fwdBase {
         private readonly _brightness: jacdac.RegisterClient<[number]>
 
         constructor(role: string) {
-            super(jacdac.SRV_LIGHTS, role)
+            super(SRV_LIGHTS, role)
 
             this._brightness = super.addRegister<[number]>(
-                jacdac.LightsReg.Brightness,
-                jacdac.LightsRegPack.Brightness
+                LightsReg.Brightness,
+                LightsRegPack.Brightness
             )
         }
 

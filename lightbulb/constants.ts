@@ -1,4 +1,4 @@
-namespace jacdac {
+namespace fwdBase {
     // Lights Service constants
     export const SRV_LIGHTS = 0x1cab054c
     export const enum LightsReg {
