@@ -18,9 +18,9 @@ namespace fwdEnums {
 
     export const enum ClockwiseCounterclockwise {
         //% block="↻"
-        CW,
+        Clockwise,
         //% block="↺"
-        CCW,
+        Counterclockwise,
     }
 
     export const enum ForwardReverse {
