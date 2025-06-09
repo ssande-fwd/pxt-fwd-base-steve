@@ -36,4 +36,11 @@ namespace fwdEnums {
         //% block="lowered"
         Lowered = 0,
     }
+
+    export const enum MotionStasis {
+        //% block="motion"
+        Motion,
+        //% block="stasis"
+        Stasis,
+    }
 }
