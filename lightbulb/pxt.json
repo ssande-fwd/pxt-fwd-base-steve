@@ -2,6 +2,7 @@
     "name": "fwd-lightbulb",
     "version": "1.0.5",
     "description": "Controls LED lights",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
         "jacdac": "github:microsoft/pxt-jacdac#v1.9.32"
