@@ -1,6 +1,6 @@
 {
     "name": "fwd-servo-base",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "FWD Edu Climate Action Kit Gen. 2 Generic Servo",
     "license": "MIT",
     "dependencies": {
