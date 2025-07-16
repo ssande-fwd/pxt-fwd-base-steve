@@ -5,7 +5,7 @@
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "jacdac": "github:microsoft/pxt-jacdac#v1.9.32"
+        "jacdac": "github:jacdac/pxt-jacdac#v1.9.37"
     },
     "files": [
         "common/buttons.ts",
