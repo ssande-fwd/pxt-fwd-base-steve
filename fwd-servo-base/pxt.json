@@ -5,8 +5,8 @@
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "jacdac": "github:microsoft/pxt-jacdac#v1.9.32",
-        "jacdac-servo": "github:microsoft/pxt-jacdac/servo#v1.9.32"
+        "jacdac": "github:jacdac/pxt-jacdac#v1.9.37",
+        "jacdac-servo": "github:jacdac/pxt-jacdac/servo#v1.9.37"
     },
     "files": [
         "client.ts"
