@@ -1,0 +1,25 @@
+{
+    "name": "fwd-edu-ec",
+    "version": "1.0.7",
+    "description": "FWD Edu Electrical Conductivity",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:jacdac/pxt-jacdac#v1.9.37"
+    },
+    "files": [
+        "client.ts",
+        "constants.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "7.0.61",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}
