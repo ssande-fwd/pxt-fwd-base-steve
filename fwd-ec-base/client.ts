@@ -43,7 +43,7 @@ namespace fwdBase {
          * @param standard2 the known EC of standard2
          * @param reading2 the measured EC of standard2
          */
-        //% group="pH"
+        //% group="EC"
         //% block="calibrate $this measures $standard1 as $reading1 measures $standard2 as $reading2"
         //% blockId=fwd_ph_calibrate
         //% inlineInputMode=external
