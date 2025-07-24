@@ -7,6 +7,10 @@ namespace fwdBase {
         private standard2: number
         private reading2: number
 
+        private readings: number[] = []
+        private sumOfReadings: number = 0
+        private readonly WINDOW_SIZE: number = 120
+
         constructor(role: string) {
             super(
                 fwdBase.SRV_ELECTRICALCONDUCTIVITY,
@@ -22,17 +26,39 @@ namespace fwdBase {
         //% block="$this EC"
         //% blockId=fwd_ec_get_ec
         ec(): number {
+            let currentReading: number;
+
             if (this.calibrated) {
                 const slope =
                     (this.standard2 - this.standard1) /
                     (this.reading2 - this.reading1)
                 const intercept = this.standard1 - slope * this.reading1
-                const reading = super.reading()
+                const rawReading = super.reading() // Get the raw reading from the sensor
 
-                return slope * reading + intercept
+                currentReading = slope * rawReading + intercept
             } else {
-                return super.reading()
+                currentReading = super.reading() // Get the raw reading if not calibrated
             }
+
+            // --- Rolling Average Logic ---
+            // 1. Add the new reading to the sum and the array
+            this.sumOfReadings += currentReading;
+            this.readings.push(currentReading);
+
+            // 2. If the array size exceeds the window, remove the oldest reading
+            if (this.readings.length > this.WINDOW_SIZE) {
+                const oldestReading = this.readings.shift(); // .shift() removes the first element
+                this.sumOfReadings -= oldestReading;
+            }
+
+            // 3. Calculate and return the average
+            // Ensure we don't divide by zero if no readings yet
+            if (this.readings.length === 0) {
+                return 0; // Or handle as an error/default value if appropriate
+            } else {
+                return this.sumOfReadings / this.readings.length;
+            }
+            // --- End Rolling Average Logic ---
         }
 
         /**
